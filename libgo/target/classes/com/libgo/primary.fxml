@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.libgo.PrimaryController">
+    <top>
+        <Label text="Pengelola Stok Buku" style="-fx-font-size: 20px; -fx-font-weight: bold;" alignment="CENTER" />
+    </top>
+    <center>
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn fx:id="judulBukuColumn" text="Judul Buku" />
+                <TableColumn fx:id="pengarangColumn" text="Pengarang" />
+                <TableColumn fx:id="penerbitColumn" text="Penerbit" />
+                <TableColumn fx:id="isbnColumn" text="ISBN" />
+                <TableColumn fx:id="subjekColumn" text="Subjek" />
+                <TableColumn fx:id="stokColumn" text="Stok" />
+                <TableColumn fx:id="hargaColumn" text="Harga" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+            <Button text="Tambah Buku" onAction="#switchToSecondary" />
+            <Button text="Edit Buku" onAction="#handleEdit" />
+            <Button text="Hapus Buku" onAction="#handleDelete" />
+        </HBox>
+    </bottom>
+</BorderPane>

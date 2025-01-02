@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.libgo.EditController">
+    <top>
+        <Label text="Edit Buku" style="-fx-font-size: 20px; -fx-font-weight: bold;" alignment="CENTER" />
+    </top>
+    <center>
+        <GridPane hgap="10" vgap="10" style="-fx-padding: 20;">
+            <Label text="Judul Buku:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+            <TextField fx:id="judulBukuField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+            <Label text="Pengarang:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+            <TextField fx:id="pengarangField" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+            <Label text="Penerbit:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+            <TextField fx:id="penerbitField" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+            <Label text="ISBN:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+            <TextField fx:id="isbnField" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+            <Label text="Subjek:" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+            <TextField fx:id="subjekField" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+
+            <Label text="Stok:" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+            <TextField fx:id="stokField" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+
+            <Label text="Harga:" GridPane.rowIndex="6" GridPane.columnIndex="0" />
+            <TextField fx:id="hargaField" GridPane.rowIndex="6" GridPane.columnIndex="1" />
+        </GridPane>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+            <Button text="Simpan" onAction="#handleSave" />
+            <Button text="Kembali" onAction="#switchToPrimary" />
+        </HBox>
+    </bottom>
+</BorderPane>

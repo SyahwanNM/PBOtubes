@@ -2,38 +2,43 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.libgo.SecondaryController">
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.libgo.SecondaryController" style="-fx-background-color: white;">
     <top>
-        <Label text="Tambah Buku Baru" style="-fx-font-size: 20px; -fx-font-weight: bold;" alignment="CENTER" />
+        <HBox alignment="CENTER" style="-fx-padding: 20; -fx-background-color:rgb(58, 66, 172);">
+            <Label text="Tambah Buku Baru" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill:rgb(255, 255, 255);" />
+        </HBox>
     </top>
     <center>
-        <GridPane hgap="10" vgap="10" style="-fx-padding: 20;">
-            <Label text="Judul Buku:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
-            <TextField fx:id="judulBukuField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+        <StackPane style="-fx-background-color: #f4f4f4; -fx-padding: 20;" prefWidth="800" prefHeight="600">
+            <GridPane hgap="15" vgap="15" style="-fx-padding: 30; -fx-background-color: #ffffff; -fx-border-color: #dcdcdc; -fx-border-radius: 8; -fx-background-radius: 8;">
+                <Label text="Judul Buku:" style="-fx-font-size: 14px;" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+                <TextField fx:id="judulBukuField" style="-fx-font-size: 14px;" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="200" />
 
-            <Label text="Pengarang:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
-            <TextField fx:id="pengarangField" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+                <Label text="Pengarang:" style="-fx-font-size: 14px;" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+                <TextField fx:id="pengarangField" style="-fx-font-size: 14px;" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="200" />
 
-            <Label text="Penerbit:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
-            <TextField fx:id="penerbitField" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+                <Label text="Penerbit:" style="-fx-font-size: 14px;" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+                <TextField fx:id="penerbitField" style="-fx-font-size: 14px;" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="200" />
 
-            <Label text="ISBN:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
-            <TextField fx:id="isbnField" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+                <Label text="ISBN:" style="-fx-font-size: 14px;" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+                <TextField fx:id="isbnField" style="-fx-font-size: 14px;" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="200" />
 
-            <Label text="Subjek:" GridPane.rowIndex="4" GridPane.columnIndex="0" />
-            <TextField fx:id="subjekField" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+                <Label text="Subjek:" style="-fx-font-size: 14px;" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+                <TextField fx:id="subjekField" style="-fx-font-size: 14px;" GridPane.rowIndex="4" GridPane.columnIndex="1" prefWidth="200" />
 
-            <Label text="Stok:" GridPane.rowIndex="5" GridPane.columnIndex="0" />
-            <TextField fx:id="stokField" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+                <Label text="Stok:" style="-fx-font-size: 14px;" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+                <TextField fx:id="stokField" style="-fx-font-size: 14px;" GridPane.rowIndex="5" GridPane.columnIndex="1" prefWidth="200" />
 
-            <Label text="Harga:" GridPane.rowIndex="6" GridPane.columnIndex="0" />
-            <TextField fx:id="hargaField" GridPane.rowIndex="6" GridPane.columnIndex="1" />
-        </GridPane>
+                <Label text="Harga:" style="-fx-font-size: 14px;" GridPane.rowIndex="6" GridPane.columnIndex="0" />
+                <TextField fx:id="hargaField" style="-fx-font-size: 14px;" GridPane.rowIndex="6" GridPane.columnIndex="1" prefWidth="200" />
+            </GridPane>
+        </StackPane>
     </center>
+
     <bottom>
-        <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
-            <Button text="Simpan" onAction="#handleSave" />
-            <Button text="Kembali" onAction="#switchToPrimary" />
+        <HBox spacing="15" alignment="CENTER" style="-fx-padding: 15; -fx-background-color:rgb(58, 66, 172);">
+            <Button text="Simpan" onAction="#handleSave" style="-fx-font-size: 14px; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 5; -fx-background-radius: 5;" />
+            <Button text="Kembali" onAction="#switchToPrimary" style="-fx-font-size: 14px; -fx-background-color: #f44336; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 5; -fx-background-radius: 5;" />
         </HBox>
     </bottom>
 </BorderPane>

@@ -4,26 +4,33 @@
 
 <BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.libgo.PrimaryController">
     <top>
-        <Label text="Pengelola Stok Buku" style="-fx-font-size: 20px; -fx-font-weight: bold;" alignment="CENTER" />
-    </top>
+    <StackPane alignment="CENTER" style="-fx-padding: 10; -fx-background-color:#0000FF;">
+        <Label text="Pengelola Stok Buku" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill:#FFFFFF" />
+    </StackPane>
+</top>
     <center>
+    <StackPane alignment="CENTER" style="-fx-padding: 10; -fx-background-color:#0000FF;">
         <TableView fx:id="tableView">
             <columns>
-                <TableColumn fx:id="judulBukuColumn" text="Judul Buku" />
-                <TableColumn fx:id="pengarangColumn" text="Pengarang" />
-                <TableColumn fx:id="penerbitColumn" text="Penerbit" />
-                <TableColumn fx:id="isbnColumn" text="ISBN" />
-                <TableColumn fx:id="subjekColumn" text="Subjek" />
-                <TableColumn fx:id="stokColumn" text="Stok" />
-                <TableColumn fx:id="hargaColumn" text="Harga" />
+                <TableColumn fx:id="judulBukuColumn" text="Judul Buku" style="-fx-text-fill:#000000;"/>
+                <TableColumn fx:id="pengarangColumn" text="Pengarang" style="-fx-text-fill:#000000;"/>
+                <TableColumn fx:id="penerbitColumn" text="Penerbit" style="-fx-text-fill:#000000;"/>
+                <TableColumn fx:id="isbnColumn" text="ISBN" style="-fx-text-fill:#000000;"/>
+                <TableColumn fx:id="subjekColumn" text="Subjek" style="-fx-text-fill:#000000;"/>
+                <TableColumn fx:id="stokColumn" text="Stok" style="-fx-text-fill:#000000;"/>
+                <TableColumn fx:id="hargaColumn" text="Harga" style="-fx-text-fill:#000000;"/>
             </columns>
         </TableView>
+        </StackPane>
     </center>
     <bottom>
-        <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
-            <Button text="Tambah Buku" onAction="#switchToSecondary" />
-            <Button text="Edit Buku" onAction="#handleEdit" />
-            <Button text="Hapus Buku" onAction="#handleDelete" />
+        <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10; -fx-background-color:#0000FF;">
+            <Button text="Tambah Buku" onAction="#switchToSecondary" style="-fx-background-color:#4CAF50;; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 8px 12px;"
+ />
+            <Button text="Edit Buku" onAction="#handleEdit" style="-fx-background-color: #f39c12; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 8px 12px;"
+ />
+            <Button text="Hapus Buku" onAction="#handleDelete" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 8px 12px;"
+/>
         </HBox>
     </bottom>
 </BorderPane>

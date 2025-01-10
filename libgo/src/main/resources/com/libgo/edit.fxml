@@ -5,9 +5,8 @@
 
 <BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.libgo.EditController" style="-fx-background-color: #f9f9f9;">
     <top>
-        <VBox alignment="CENTER" style="-fx-padding: 20; -fx-background-color: #eaeaea;">
-            <Label text="Edit Buku" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: black;" />
-            <Separator orientation="HORIZONTAL" style="-fx-background-color: #ccc;" />
+        <VBox alignment="CENTER" style="-fx-padding: 20; -fx-background-color:rgb(0, 72, 255)">
+            <Label text="Edit Buku" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: white;" />
         </VBox>
     </top>
     <center>

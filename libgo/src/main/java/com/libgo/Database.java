@@ -8,7 +8,7 @@ public class Database {
 
     private static final String DATABASE_URL = "jdbc:mariadb://127.0.0.1:3307/libgo_db";
     private static final String DATABASE_USER = "root"; 
-    private static final String DATABASE_PASSWORD = "lordzoro234"; 
+    private static final String DATABASE_PASSWORD = "12345"; 
 
     private static Connection connection;
 
